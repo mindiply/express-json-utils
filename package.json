@@ -1,6 +1,6 @@
 {
   "name": "@bongione/express-json-utils",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Use standard result field in data and error objects returned from an ",
   "main": "lib/index.js",
   "scripts": {
