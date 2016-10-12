@@ -1,0 +1,29 @@
+{
+  "name": "@bongione/express-json-utils",
+  "version": "0.1.0",
+  "description": "Use standard result field in data and error objects returned from an ",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mindiply/express-json-utils.git"
+  },
+  "keywords": [
+    "express",
+    "json",
+    "util"
+  ],
+  "author": "Paolo Ferdinando Bongiovanni <paolo.bongiovanni@mindiply.com>",
+  "license": "\tApache-2.0",
+  "bugs": {
+    "url": "https://github.com/mindiply/express-json-utils/issues"
+  },
+  "homepage": "https://github.com/mindiply/express-json-utils#readme",
+  "devDependencies": {
+    "babel-register": "^6.16.3",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
