@@ -40,6 +40,28 @@ describe('api', () => {
             expect(parsed_data).to.deep.equal(expected_data)
             expect(res.data.headers).to.deep.equal({'Content-Type' : 'application/json'})
         })
+
+
+        it('should keep my custom result field value', () => {
+            let res = createRes()
+            let test_data = {
+                result : 'no',
+                first : 'first',
+                second : 0,
+                third : [1,2,3],
+                fourth : {
+                    a : 1,
+                    b : 'Good lord',
+                    c : 21.23
+                }
+            }
+
+            sendJSONResult(res, test_data)
+            let expected_data = Object.assign({}, test_data)
+            let parsed_data = JSON.parse(res.data.json)
+            expect(parsed_data).to.deep.equal(expected_data)
+            expect(res.data.headers).to.deep.equal({'Content-Type' : 'application/json'})
+        })
     })
 
     describe('sendJSONError()', () => {
